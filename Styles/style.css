@@ -1,10 +1,6 @@
 body {
     margin: 0;
 }
-.wrap {
-    width: 100vw;
-    height: 100vh;
-}
 .okruh {
     background: url(../Images/trasa_1.svg);
     background-size: contain;
@@ -12,7 +8,7 @@ body {
     position: relative;
     width: 100vh;
     height: 62vh;
-    margin: 0;
+    margin: 0 auto;
 }
 .formule {
     position: absolute;
@@ -23,23 +19,23 @@ body {
     width: 8%;
     height: 8%;
 }
-.pos0 { left: 65%; bottom: 20%; transform: rotate(346deg)}
-.pos1 { left: 80%; bottom: 27%; transform: rotate(346deg)}
-.pos2 { left: 89.5%; bottom: 36%; transform: rotate(275deg)}
-.pos3 { left: 86.5%; bottom: 50%; transform: rotate(215deg)}
-.pos4 { left: 76%; bottom: 51.5%; transform: rotate(180deg)}
-.pos5 { left: 62%; bottom: 51%; transform: rotate(190deg)}
-.pos6 { left: 58%; bottom: 64.5%; transform: rotate(300deg)}
-.pos7 { left: 60%; bottom: 80%; transform: rotate(220deg)}
-.pos8 { left: 47%; bottom: 85.5%; transform: rotate(190deg)}
-.pos9 { left: 36.5%; bottom: 80%; transform: rotate(110deg)}
-.pos10 { left: 30%; bottom: 75%; transform: rotate(200deg)}
-.pos11 { left: 20%; bottom: 84%; transform: rotate(200deg)}
-.pos12 { left: 7%; bottom: 83.5%; transform: rotate(170deg)}
-.pos13 { left: 3%; bottom: 73%; transform: rotate(80deg)}
-.pos14 { left: 12%; bottom: 57%; transform: rotate(40deg)}
-.pos15 { left: 22%; bottom: 37%; transform: rotate(50deg)}
-.pos16 { left: 33%; bottom: 18%; transform: rotate(35deg)}
-.pos17 { left: 43%; bottom: 12%; transform: rotate(-10deg)}
-.pos18 { left: 57%; bottom: 17%; transform: rotate(-14deg)}
-.pos19 { left: 75%; bottom: 25%; transform: rotate(-14deg)}
+.pos0 { left: 65%; bottom: 20%; transform: rotate(346deg);}
+.pos1 { left: 80%; bottom: 27%; transform: rotate(346deg);}
+.pos2 { left: 89.5%; bottom: 36%; transform: rotate(275deg);}
+.pos3 { left: 86.5%; bottom: 50%; transform: rotate(215deg);}
+.pos4 { left: 76%; bottom: 51.5%; transform: rotate(180deg);}
+.pos5 { left: 62%; bottom: 51%; transform: rotate(190deg);}
+.pos6 { left: 58%; bottom: 64.5%; transform: rotate(300deg);}
+.pos7 { left: 60%; bottom: 80%; transform: rotate(220deg);}
+.pos8 { left: 47%; bottom: 85.5%; transform: rotate(190deg);}
+.pos9 { left: 36.5%; bottom: 80%; transform: rotate(110deg);}
+.pos10 { left: 30%; bottom: 75%; transform: rotate(200deg);}
+.pos11 { left: 20%; bottom: 84%; transform: rotate(200deg);}
+.pos12 { left: 7%; bottom: 83.5%; transform: rotate(170deg);}
+.pos13 { left: 3%; bottom: 73%; transform: rotate(80deg);}
+.pos14 { left: 12%; bottom: 57%; transform: rotate(40deg);}
+.pos15 { left: 22%; bottom: 37%; transform: rotate(50deg);}
+.pos16 { left: 33%; bottom: 18%; transform: rotate(35deg);}
+.pos17 { left: 43%; bottom: 12%; transform: rotate(-10deg);}
+.pos18 { left: 57%; bottom: 17%; transform: rotate(-14deg);}
+.pos19 { left: 75%; bottom: 25%; transform: rotate(-14deg);}
