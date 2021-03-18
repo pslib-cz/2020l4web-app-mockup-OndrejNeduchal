@@ -7,6 +7,8 @@ Ve hře naleznte formuli na závodním okruhu, hráč pomocí odpovídání kví
 * Hráč musí kliknout na správnou odpověď, co nejrychleji.
 * Pokud odpoví správně, tak se formule posune o jedno pole vpřed na okruhu
 * Pokud hráč odpoví špatně, tak se na scoreboardu objeví trestný bod (Za každný trestný bod se přičtou 3s po dokončení závodu)
+* Zároveň se zakliklá odpověď, která je špatně zabarví červeně a zůstane tak.
+* Po správné odpovědi se objeví další otázka
 * Hra končí po zodpovězení všech 20 otázek a projetí cílem.
 * Zobrazí se scoreboard, kde je čas i s trestnými body
 ## Cíl hry

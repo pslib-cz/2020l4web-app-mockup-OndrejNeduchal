@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     <title>Formule 1</title>
 </head>
 
 <body>
     <div class="score">
-        <span>Čas</span>
-        <span>dd.mm.rrrr</span>
-        <span>Počet otázek</span>
+        <span>ČAS:</span>
+        <span>hh:mm:ss</span>
+        <span>POČET OTÁZEK:</span>
         <span>XX</span>
-        <span>Zodpovězené</span>
-        <span>XX</span>
-        <span>Trestné body</span>
-        <span>XX</span>
+        <span>ZODPOVĚZENÉ:</span>
+        <span class="green">XX</span>
+        <span>TRESTNÉ BODY:</span>
+        <span class="red">XX</span>
     </div>
     <div class="okruh">
         <div class="formule pos0"></div>
@@ -42,8 +46,10 @@
         <div class="formule pos18"></div>
         <div class="formule pos19"></div>
     </div>
-    <div class="otazky"></div>
-    <div class="menu"></div>
+    <div class="wrap">
+        <div class="menu"></div>
+        <div class="otazky"></div>
+    </div>
 </body>
 
 </html>

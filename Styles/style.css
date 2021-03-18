@@ -1,5 +1,29 @@
+html {
+    font-family: 'Suez One', serif;
+    font-weight: 400;
+}
 body {
     margin: 0;
+}
+.score {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0 3% 0;
+    font-size: 160%;
+    width: 100%;
+    height: fit-content;
+}
+.score > * {
+    margin-left: 0.5%;
+}
+.score > *:nth-child(odd) {
+    margin-left: 2%;
+}
+.green {
+    color: rgb(117, 255, 3);
+}
+.red {
+    color: rgb(255, 20, 30)
 }
 .okruh {
     background: url(../Images/trasa_1.svg);
