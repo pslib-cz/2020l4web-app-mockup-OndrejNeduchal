@@ -16,13 +16,13 @@
 <body>
     <div class="wrap">
     <div class="score" id="score">
-        <span>ČAS:</span>
+        <span class="cas"></span>
         <span>hh:mm:ss</span>
-        <span>POČET OTÁZEK:</span>
+        <span class="pocet"></span>
         <span>XX</span>
-        <span>ZODPOVĚZENÉ:</span>
+        <span class="spravne"></span>
         <span class="green">XX</span>
-        <span>TRESTNÉ BODY:</span>
+        <span class="spatne"></span>
         <span class="red">XX</span>
     </div>
     <div class="okruh" id="okruh">
@@ -47,8 +47,33 @@
         <div class="formule pos18"></div>
         <div class="formule pos19"></div>
     </div>
-        <div class="menu" id="menu"></div>
-        <div class="otazky" id="menu"></div>
+        <div class="menu" id="menu">
+            <span class="bggreen">PLAY</span>
+            <span class="bgred">STOP</span>
+        </div>
+        <div class="otazky" id="otazky">
+            <div class="otazka"><span class="bgblue">Jakou má pomeranč barvu?</span></div>
+            <div class="odpoved"><span class="bggery">Modrou jako nebe</span></div>
+            <div class="odpoved"><span class="bggery">Zelenou se zebří modří</span></div>
+            <div class="odpoved"><span class="bggery">Žlutou s puntíkama</span></div>
+            <div class="odpoved"><span class="bggery">Oranžovou</span></div>
+        </div>
+    </div>
+    <div class="scoreboard">
+    <div class="background">
+        <div class="celkovescore">
+            <span>Celkové score</span>
+            <span>HH:MM:SS</span>
+        </div>
+        <div class="cas">
+            <span>Čas</span>
+            <span>HH:MM:SS</span>
+        </div>
+        <div class="trestenbody">
+            <span>Počet trestných bodů</span>
+            <span>HH:MM:SS</span>
+        </div>
+    </div>
     </div>
 </body>
 

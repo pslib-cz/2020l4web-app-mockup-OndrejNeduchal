@@ -4,6 +4,7 @@ html {
 }
 body {
     margin: 0;
+    height: 100vh;
 }
 .wrap {
     width: 100%;
@@ -11,7 +12,10 @@ body {
     display: grid;
     grid-template-areas: "score menu"
                          "okruh otazky";
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1.5fr 8fr;
+    align-items: center;
+    justify-items: center;
 }
 .score {
     display: flex;
@@ -27,11 +31,25 @@ body {
 .score > *:nth-child(odd) {
     margin-left: 2%;
 }
-.green {
-    color: rgb(117, 255, 3);
+.cas::after {
+    content: url(../Images/cas.svg);
+    padding-right: 6%;
+    vertical-align: text-bottom;
 }
-.red {
-    color: rgb(255, 20, 30)
+.pocet::after {
+    content: url(../Images/Pocet-otazek.svg);
+    padding-right: 6%;
+    vertical-align: text-bottom;
+}
+.spravne::after {
+    content: url(../Images/Spravne-odpovedi.svg);
+    padding-right: 6%;
+    vertical-align: text-bottom;
+}
+.spatne::after {
+    content: url(../Images/spatne-odpovedi.svg);
+    padding-right: 6%;
+    vertical-align: text-bottom;
 }
 .okruh {
     background: url(../Images/trasa_1.svg);
@@ -72,7 +90,156 @@ body {
 .pos18 { left: 57%; bottom: 17%; transform: rotate(-14deg);}
 .pos19 { left: 75%; bottom: 25%; transform: rotate(-14deg);}
 
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 1% 0 3% 0;
+    font-size: 160%;
+    width: 100%;
+}
+.menu span {
+   display: block;
+   text-align: center;
+   width: 40%;
+   padding: 3% 0;
+}
+.otazky {
+ display: flex;
+ flex-direction: column;
+ font-size: 150%;
+ margin: 0 auto;
+ text-align: center;
+ width: 90%;
+ min-width: 30vh;
+}
+.otazky > * {
+    margin-top: 5%;
+    width: 100%;
+}
+.otazky span {
+    padding: 5% 0;
+    display: block;
+}
+.otazka span, .odpoved span, .menu span {
+    box-shadow: 5px 5px 0 0 rgb(228, 228, 228);
+    border-radius: 10px;
+}
+.scoreboard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(87, 87, 87, 0.616);
+}
+.background {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    width: 40%;
+    height: 40%;
+    background: rgb(251,194,59);
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 0 rgb(228, 228, 228);
+}
+.green {color: rgb(117, 255, 3);}
+.red {color: rgb(255, 20, 30);}
+
+.bggery {background-color: rgb(241, 241, 241);}
+.bgred {background-color: rgb(255, 20, 30);}
+.bggreen {background-color: rgb(117, 255, 3);}
+.bgblue {background-color: rgb(4,4,251);}
+
 #menu {grid-area: menu;}
 #okruh {grid-area: okruh;}
 #score {grid-area: score;}
 #otazky {grid-area: otazky;}
+
+@media only screen and (max-width: 1440px) {
+    .wrap {
+        grid-template-areas: "score menu"
+                             "okruh okruh"
+                             "otazky otazky";
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1.5fr 6fr 3fr;
+    }
+    .otazky {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        width: 100%;
+        min-width: 15vh;
+       }
+       .otazky > * {
+        margin-top: 0;
+        width: 15%;
+    }
+    .okruh {
+        margin: 2% auto;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .okruh {
+        width: 67vh;
+        height: 41vh;
+    }
+    .otazky {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 2%;
+       }
+       .otazky > * {
+        margin-top: 2%;
+        width: 100%;
+    }
+    .otazky span {
+        padding: 3% 0;
+        display: block;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .okruh {
+        width: 50vh;
+        height: 31vh;
+    }
+        .wrap {
+        grid-template-areas: "score score"
+                             "menu menu"
+                             "okruh okruh"
+                             "otazky otazky";
+        grid-template-rows: 1fr 2fr 8fr 8fr;
+    }
+    .menu {
+        margin: 1% 0 2% 0;
+        font-size: 150%;
+    }
+    .menu span {
+       width: 40%;
+       padding: 1.5% 0;
+    }
+    .score {
+        margin: 1% 0 1% 0;
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 565px) {
+    .okruh {
+        transform: rotate(-90deg);
+        margin: 0;
+    }
+    .wrap {
+        grid-template-areas: "score score"
+                             "menu menu"
+                             "okruh okruh"
+                             "otazky otazky";
+        grid-template-rows: 1fr 1fr 6fr 4fr;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .score {
+        margin: 1% 0 1% 0;
+        font-size: 120%;
+    }
+}
