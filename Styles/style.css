@@ -143,6 +143,11 @@ body {
     border-radius: 20px;
     box-shadow: 5px 5px 0 0 rgb(228, 228, 228);
 }
+.scoreboard .spatne {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+}
 .green {color: rgb(117, 255, 3);}
 .red {color: rgb(255, 20, 30);}
 
