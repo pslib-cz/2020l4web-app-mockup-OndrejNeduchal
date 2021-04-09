@@ -15,7 +15,7 @@ Ve hře naleznte formuli na závodním okruhu, hráč pomocí odpovídání kví
 ## Cíl hry
 * Cílem hry je objét okruh co nejrychleji a odpověďět na vše správně
 ## Struktura
-* Přihlášení přes google, lze si vybrat verzi učitele nebo hráče.
+* Přihlášení přes google, verze se vybere sama podle statusu ze školní databáze. (Lze se přihlásit pouze přes školní účet)
 * Závodní okruh s časomírou a scoreboardem
 * Shrnutí výsledků
 * Verze pro učitele
