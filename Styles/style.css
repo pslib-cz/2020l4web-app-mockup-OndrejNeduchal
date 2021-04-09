@@ -11,7 +11,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-areas: "score menu"
-                         "okruh otazky";
+                         "okruh questions";
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1.5fr 8fr;
     align-items: center;
@@ -31,22 +31,22 @@ body {
 .score > *:nth-child(odd) {
     margin-left: 2%;
 }
-.cas::after {
+.time::after {
     content: url(../Images/cas.svg);
     padding-right: 6%;
     vertical-align: text-bottom;
 }
-.pocet::after {
+.number-of-questiones::after {
     content: url(../Images/Pocet-otazek.svg);
     padding-right: 6%;
     vertical-align: text-bottom;
 }
-.spravne::after {
+.number-of-good::after {
     content: url(../Images/Spravne-odpovedi.svg);
     padding-right: 6%;
     vertical-align: text-bottom;
 }
-.spatne::after {
+.number-of-bad::after {
     content: url(../Images/spatne-odpovedi.svg);
     padding-right: 6%;
     vertical-align: text-bottom;
@@ -98,13 +98,15 @@ body {
     font-size: 160%;
     width: 100%;
 }
-.menu span {
+.menu * {
    display: block;
    text-align: center;
    width: 40%;
    padding: 3% 0;
+   text-decoration: none;
+   color: black;
 }
-.otazky {
+.questions {
  display: flex;
  flex-direction: column;
  font-size: 150%;
@@ -113,19 +115,20 @@ body {
  width: 90%;
  min-width: 30vh;
 }
-.otazky > * {
+.questions > * {
     margin-top: 5%;
     width: 100%;
 }
-.otazky span {
+.questions span {
     padding: 5% 0;
     display: block;
 }
-.otazka span, .odpoved span, .menu span {
+.otazka span, .answer span, .menu * {
     box-shadow: 5px 5px 0 0 rgb(228, 228, 228);
     border-radius: 10px;
 }
 .scoreboard {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -154,43 +157,39 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-.scoreboard .spatne {
-    position: absolute;
-    right: 2%;
-    top: 3%;
-}
 
-.none { display: none;}
-.hover:hover {cursor: pointer; color: white;}
-.green {color: rgb(117, 255, 3);}
-.red {color: rgb(255, 20, 30);}
+.shown { display: block;}
+.button:hover {cursor: pointer; color: white;}
 
-.bggery {background-color: rgb(241, 241, 241);}
-.bgred {background-color: rgb(255, 20, 30);}
-.bggreen {background-color: rgb(117, 255, 3);}
-.bgblue {background-color: rgb(4,4,251);}
+.answerd {color: rgb(117, 255, 3);}
+.answerd-bad {color: rgb(255, 20, 30);}
+
+.possible-answer {background-color: rgb(241, 241, 241);}
+.bad-answer {background-color: rgb(255, 20, 30);}
+.good-answer {background-color: rgb(117, 255, 3);}
+.question {background-color: rgb(4,4,251);}
 
 #menu {grid-area: menu;}
 #okruh {grid-area: okruh;}
 #score {grid-area: score;}
-#otazky {grid-area: otazky;}
+#questions {grid-area: questions;}
 
 @media only screen and (max-width: 1440px) {
     .wrap {
         grid-template-areas: "score menu"
                              "okruh okruh"
-                             "otazky otazky";
+                             "questions questions";
         grid-template-columns: 3fr 2fr;
         grid-template-rows: 1.5fr 6fr 3fr;
     }
-    .otazky {
+    .questions {
         flex-direction: row;
         justify-content: space-around;
         margin: 0;
         width: 100%;
         min-width: 15vh;
        }
-       .otazky > * {
+       .questions > * {
         margin-top: 0;
         width: 15%;
     }
@@ -203,17 +202,17 @@ body {
         width: 67vh;
         height: 41vh;
     }
-    .otazky {
+    .questions {
         flex-direction: column;
         margin: 0 auto;
         width: 80%;
         margin-bottom: 2%;
        }
-       .otazky > * {
+       .questions > * {
         margin-top: 2%;
         width: 100%;
     }
-    .otazky span {
+    .questions span {
         padding: 3% 0;
         display: block;
     }
@@ -227,14 +226,14 @@ body {
         grid-template-areas: "score score"
                              "menu menu"
                              "okruh okruh"
-                             "otazky otazky";
+                             "questions questions";
         grid-template-rows: 1fr 2fr 8fr 8fr;
     }
     .menu {
         margin: 1% 0 2% 0;
         font-size: 150%;
     }
-    .menu span {
+    .menu * {
        width: 40%;
        padding: 1.5% 0;
     }
@@ -257,7 +256,7 @@ body {
         grid-template-areas: "score score"
                              "menu menu"
                              "okruh okruh"
-                             "otazky otazky";
+                             "questions questions";
         grid-template-rows: 1fr 1fr 6fr 4fr;
     }
 }

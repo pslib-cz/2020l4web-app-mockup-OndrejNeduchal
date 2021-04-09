@@ -1,29 +1,30 @@
 # Formule
 **Author:** *Ondřej Neduchal*
 **[DEMO](https://pslib-cz.github.io/2020l4web-typography-css-library-OndrejNeduchal/)** site for previews
-Ve hře naleznte formuli na závodním okruhu, hráč pomocí odpovídání kvízových otázek pohybuje s formulí po okruhu a snaží se zajét trať, za co nejkratší čas.
+Ve hře naleznte formuli na závodním okruhu, hráč pomocí odpovídání kvízových otázek pohybuje s formulí po okruhu a snaží se zajét trať, za co nejkratší čas, účelem je hru používat na testování žáků ze znalostí předmětu.
 ## Pravidla hry
-* Hra začíná po zmáčknutí tlačítka start, objeví se otázka a 4 možné odpovědi (pouze jedna je správná), také se spustí časomíra
-* Hráč musí kliknout na správnou odpověď, co nejrychleji.
+* Hra začíná po zmáčknutí tlačítka start, objeví se otázka a 4 možné odpovědi (pouze jedna je správná), také se spustí odpočet času.
+* Hráč musí kliknout na správnou odpověď
 * Pokud odpoví správně, tak se formule posune o jedno pole vpřed na okruhu
-* Pokud hráč odpoví špatně, tak se na scoreboardu objeví trestný bod (Za každný trestný bod se přičtou 4s po dokončení závodu)
-* Zároveň se zakliklá odpověď, která je špatně zabarví červeně a zůstane tak.
+* Pokud hráč odpoví špatně, tak se na scoreboardu objeví trestný bod a objeví se další otázka
 * Po správné odpovědi se objeví další otázka
-* Hra končí po zodpovězení všech 20 nebo 10 otázek a projetí cílem.
-* Zobrazí se scoreboard, kde je čas, celkový čas i s trestnými body
+* Hra končí po zodpovězení všech 20, 10 nebo 5 otázek a projetí cílem.
+* Zobrazí se scoreboard, kde je čas, počet špatně zodpovězených otázek a známka z testu
+* Hru nelze stopnout
+* Hru nelze opakovat
 ## Cíl hry
-* Cílem hry je objét okruh co nejrychleji a nenasbírat žádné trestné body
+* Cílem hry je objét okruh co nejrychleji a odpověďět na vše správně
 ## Struktura
+* Přihlášení přes google, lze si vybrat verzi učitele nebo hráče.
 * Závodní okruh s časomírou a scoreboardem
 * Shrnutí výsledků
-## Funkce
-### Scoreboard
-* Lzeho vypnout křížkem, který je v pravém horním rohu
-### Spuštění a přerušení hry
-* Hra se spouští tlačítkem start
-* Hru nelze stopnout
-* Hru lze zrušit tlačítkem stop
-* Po objevení scoreboardu se hra automaticky resetuje
+* Verze pro učitele
+* Z verze pro učitele lze jít do prostředí pro úpravu otázek
+## Úprava
+* Učitel může upravit sadu otázek a to pomocí kliknutí na talčítko settings
+* Lze upravit počet a znění otázek, známkování (to bude vypočteno podle počtu špatných odpovědí) a odpočet času na hru
+* Novou sadu lze sdílet jednotlivým třídám, pomocí linku, který se odešle do jejich emailu (Sběr z databáze školy, kdo do jaké třídy patří), tento link již posílá verzi pro hráče
+* Po přihlášení se autaticky podle statusu mailu zapne mood pro učitele nebo žáka
 ## Základní sada otázek
 * Správná odpověď je nápsána **tučně**
 ### 1. Kdo byl prezidentem ČR v roce 2019?
