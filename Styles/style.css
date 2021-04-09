@@ -132,6 +132,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(87, 87, 87, 0.616);
+    font-size: 140%;
 }
 .background {
     position: absolute;
@@ -142,12 +143,24 @@ body {
     background: rgb(251,194,59);
     border-radius: 20px;
     box-shadow: 5px 5px 0 0 rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.background > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .scoreboard .spatne {
     position: absolute;
     right: 2%;
     top: 3%;
 }
+
+.none { display: none;}
 .green {color: rgb(117, 255, 3);}
 .red {color: rgb(255, 20, 30);}
 
@@ -229,6 +242,11 @@ body {
         font-size: 150%;
     }
 }
+@media only screen and (max-width: 600px) {
+    .scoreboard {
+        font-size: 100%;
+    }
+}
 @media only screen and (max-width: 565px) {
     .okruh {
         transform: rotate(-90deg);
@@ -242,9 +260,12 @@ body {
         grid-template-rows: 1fr 1fr 6fr 4fr;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 410px) {
     .score {
         margin: 1% 0 1% 0;
         font-size: 120%;
+    }
+    .background {
+        width: 60%;
     }
 }
