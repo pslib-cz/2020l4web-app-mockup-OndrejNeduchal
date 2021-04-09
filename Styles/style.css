@@ -161,6 +161,7 @@ body {
 }
 
 .none { display: none;}
+.hover:hover {cursor: pointer; color: white;}
 .green {color: rgb(117, 255, 3);}
 .red {color: rgb(255, 20, 30);}
 
