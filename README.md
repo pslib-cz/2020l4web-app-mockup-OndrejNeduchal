@@ -15,7 +15,7 @@ Ve hře naleznte formuli na závodním okruhu, hráč pomocí odpovídání kví
 ## Cíl hry
 * Cílem hry je objét okruh co nejrychleji a odpověďět na vše správně
 ## Struktura
-* Přihlášení přes google, verze se vybere sama podle statusu ze školní databáze. (Lze se přihlásit pouze přes školní účet)
+* Přihlášení přes google, automaticky se zapne verze pro učitele
 * Závodní okruh s časomírou a scoreboardem
 * Shrnutí výsledků
 * Verze pro učitele
@@ -23,8 +23,16 @@ Ve hře naleznte formuli na závodním okruhu, hráč pomocí odpovídání kví
 ## Úprava
 * Učitel může upravit sadu otázek a to pomocí kliknutí na talčítko settings
 * Lze upravit počet a znění otázek, známkování (to bude vypočteno podle počtu špatných odpovědí) a odpočet času na hru
-* Novou sadu lze sdílet jednotlivým třídám, pomocí linku, který se odešle do jejich emailu (Sběr z databáze školy, kdo do jaké třídy patří), tento link již posílá verzi pro hráče
-* Po přihlášení se autaticky podle statusu mailu zapne mood pro učitele nebo žáka
+* Novou sadu lze sdílet pomocí linku, který se zkopíruje do schránky, tento link již posílá verzi pro hráče
+* Po přihlášení si zvolíte se automaticky zapne verze pro učitele
+### Funkce v úpravě
+* Po zvolení počtu otázek se možnost zbarví modře a lze editovat pouze určený počet otázek
+* Čas lze zvolit od 0 do 120 minut
+* Otázky a odpovědi mohou obsahovat maximálně 60 znaků
+* Po upravení otázky a jejich odpovědí je třeba každou uložit
+* Vždy na první místo se zadá správná odpověď, ve hře se pak bude jejich pořádí náhodně míchat
+* Po úpravě otázek lze hru sdílet pomocí linku, který se zkopíruje do schránky
+* Další možnost je zaslat si link pro úpravu na email, přes který jste přihlášeni
 ## Základní sada otázek
 * Správná odpověď je nápsána **tučně**
 ### 1. Kdo byl prezidentem ČR v roce 2019?

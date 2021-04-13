@@ -95,16 +95,19 @@ body {
     justify-content: space-around;
     flex-direction: row;
     margin: 1% 0 3% 0;
-    font-size: 160%;
+    font-size: 130%;
     width: 100%;
 }
 .menu * {
    display: block;
    text-align: center;
-   width: 40%;
+   width: 30%;
    padding: 3% 0;
    text-decoration: none;
    color: black;
+}
+.log-out {
+    background-color: rgb(4,4,251);
 }
 .questions {
  display: flex;
@@ -216,6 +219,9 @@ body {
         padding: 3% 0;
         display: block;
     }
+    .menu * {
+        font-size: 90%;
+    }
 }
 @media only screen and (max-width: 760px) {
     .okruh {
@@ -234,7 +240,7 @@ body {
         font-size: 150%;
     }
     .menu * {
-       width: 40%;
+       width: 30%;
        padding: 1.5% 0;
     }
     .score {
