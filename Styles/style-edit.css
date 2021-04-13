@@ -2,10 +2,10 @@ html {
     font-family: 'Suez One', serif;
     font-weight: 400;
 }
-.number div {
+.number > div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 .button {
     background-color: rgb(241, 241, 241);
@@ -13,6 +13,7 @@ html {
     border-radius: 10px;
     padding: 3px 6px;
     font-size: 130%;
+    margin: 0 1%;
 }
 .button:hover {
     background-color: rgb(4,4,251);
@@ -21,7 +22,7 @@ html {
 .checked {
     background-color: rgb(4,4,251);
 }
-.timer input {
+.timer input, .questiones input {
     font: 400 130% 'Suez One';
     border-radius: 10px;
     cursor: pointer;
@@ -31,4 +32,47 @@ html {
 }
 .timer label {
     font-size: 130%;
+}
+.timer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.timer div > * .share-save div * {
+    margin: 0 1%;
+}
+.share-save .button {
+    width: fit-content;
+}
+.questiones > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.questiones > div div {
+    margin: 2% 2%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.questiones div div > * {
+    margin: 1% auto;
+}
+h1, h2 {
+    text-align: center;
+}
+.share-save div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+@media only screen and (max-width: 410px) {
+    .button {
+        font-size: 100%;
+    }
 }
