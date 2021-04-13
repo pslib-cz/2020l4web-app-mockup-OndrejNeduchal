@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/style.css">
     <link rel="stylesheet" href="../Styles/style-edit.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,7 +12,200 @@
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     <title>Editovací panel</title>
 </head>
+
 <body>
-    
+    <div>
+        <h1>Editovací panel</h1>
+        <div class="number">
+            <h2>Zvol počet otázek</h2>
+            <div>
+                <div class="button"><span>4 otázky</span></div>
+                <div class="button checked"><span>5 otázek</span></div>
+                <div class="button"><span>10 otázek</span></div>
+                <div class="button"><span>20 otázek</span></div>
+            </div>
+        </div>
+        <div class="timer">
+            <h2>Zadej čas</h2>
+            <form>
+                <input type="number" id="quantity" name="quantity" min="0" max="120" step="1" value="0">
+                <label for="quantity">Minut</label>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="questiones">
+            <h2>Uprav znění otázek</h2>
+            <div>
+                <div>
+                    <input type="text" maxlength="60" id="1-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="1-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="1-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="1-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="1-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="2-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="2-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="2-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="2-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="2-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="3-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="3-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="3-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="3-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="3-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="4-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="4-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="4-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="4-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="4-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="5-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="5-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="5-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="5-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="5-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="6-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="6-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="6-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="6-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="6-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="7-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="7-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="7-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="7-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="7-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="8-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="8-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="8-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="8-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="8-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="9-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="9-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="9-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="9-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="9-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="10-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="10-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="10-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="10-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="10-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="11-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="11-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="11-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="11-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="11-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="12-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="12-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="12-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="12-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="12-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="13-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="13-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="13-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="13-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="13-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="14-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="14-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="14-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="14-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="14-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="15-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="15-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="15-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="15-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="15-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="16-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="16-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="16-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="16-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="16-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="17-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="17-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="17-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="17-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="17-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="18-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="18-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="18-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="18-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="18-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                </div>
+                <div>
+                    <input type="text" maxlength="60" id="19-question" name="question" value="Sem zadej otázku"><br>
+                    <input type="text" id="19-right-answer" name="right-answer" value="Sem zadej správnou odpověď"><br>
+                    <input type="text" id="19-wrong-answer-1" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="19-wrong-answer-2" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="text" id="19-wrong-answer-3" name="wrong-answer" value="Sem zadej špatnou odpověď"><br>
+                    <input type="submit" value="Submit">
+                    <div>
+                        <input type="text" maxlength="60" id="20-question" name="question" value="Sem zadej otázku"><br>
+                        <input type="text" id="20-right-answer" name="right-answer"
+                            value="Sem zadej správnou odpověď"><br>
+                        <input type="text" id="20-wrong-answer-1" name="wrong-answer"
+                            value="Sem zadej špatnou odpověď"><br>
+                        <input type="text" id="20-wrong-answer-2" name="wrong-answer"
+                            value="Sem zadej špatnou odpověď"><br>
+                        <input type="text" id="20-wrong-answer-3" name="wrong-answer"
+                            value="Sem zadej špatnou odpověď"><br>
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="share">
+            <h2>Sdílej nebo test ulož</h2>
+        </div>
+    </div>
 </body>
+
 </html>

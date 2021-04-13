@@ -159,7 +159,7 @@ body {
 }
 
 .shown { display: block;}
-.button:hover {cursor: pointer; color: white;}
+.hover:hover {cursor: pointer; color: white;}
 
 .answerd {color: rgb(117, 255, 3);}
 .answerd-bad {color: rgb(255, 20, 30);}
@@ -244,6 +244,9 @@ body {
 }
 @media only screen and (max-width: 600px) {
     .scoreboard {
+        font-size: 100%;
+    }
+    .questions {
         font-size: 100%;
     }
 }
